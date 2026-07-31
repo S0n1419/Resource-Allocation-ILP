@@ -36,7 +36,8 @@ Trong đó các điểm thành phần được định chuẩn về thang điể
 2. **Điểm chứng chỉ ($t_h$)**: Chuẩn hóa từ cột `certifications` $\ell \in [0, 5]$:
    $$t_h = 10 \times \frac{\ell}{5}$$
 3. **Điểm kinh nghiệm ($y_h$)**: Áp dụng hàm logarit phi tuyến tính (vì số năm kinh nghiệm tăng cao ở mức senior/expert không đem lại hiệu quả tuyến tính tương xứng như junior):
-   $$y_h = 10 \times \frac{\log(1 + j_h)}{\log(21)} \quad (\text{với } j_h \text{ là } \text{experience\_years} \in [0, 20])$$
+   $$y_h = 10 \times \frac{\log(1 + j_h)}{\log(21)}$$
+Trong đó $j_h$ là số năm kinh nghiệm (`experience_years` $\in [0, 20]$).
 4. **Điểm trình độ học vấn ($d_h$)**: Ánh xạ từ cột `education_level`:
    * High School: $2$ | Diploma: $4$ | Bachelor: $6$ | Master: $8$ | PhD: $10$
 5. **Điểm quy mô công ty ($f_h$)**: Ánh xạ từ cột `company_size`:
@@ -95,7 +96,7 @@ Trình duyệt web sẽ tự động mở ứng dụng tại địa chỉ cục 
 
 ### 4.3. Chạy File CLI Độc Lập (`recruitment_optimizer.py`)
 
-Tệp [recruitment_optimizer.py](./recruitment_optimizer.py) chứa mã nguồn giải bài toán ILP tối ưu hóa rút gọn, chạy trực tiếp trên giao diện dòng lệnh (CLI). Để kiểm tra nhanh thuật toán mà không cần giao diện web, chạy lệnh:
+Tệp [`recruitment_optimizer.py`](./recruitment_optimizer.py) chứa mã nguồn giải bài toán ILP tối ưu hóa rút gọn, chạy trực tiếp trên giao diện dòng lệnh (CLI). Để kiểm tra nhanh thuật toán mà không cần giao diện web, chạy lệnh:
 
 ```bash
 python recruitment_optimizer.py
