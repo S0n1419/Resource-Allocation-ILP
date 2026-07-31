@@ -95,7 +95,7 @@ Trình duyệt web sẽ tự động mở ứng dụng tại địa chỉ cục 
 
 ### 4.3. Chạy File CLI Độc Lập (`recruitment_optimizer.py`)
 
-Tệp [recruitment_optimizer.py](../recruitment_optimizer.py) chứa mã nguồn giải bài toán ILP tối ưu hóa rút gọn, chạy trực tiếp trên giao diện dòng lệnh (CLI). Để kiểm tra nhanh thuật toán mà không cần giao diện web, chạy lệnh:
+Tệp [recruitment_optimizer.py](./recruitment_optimizer.py) chứa mã nguồn giải bài toán ILP tối ưu hóa rút gọn, chạy trực tiếp trên giao diện dòng lệnh (CLI). Để kiểm tra nhanh thuật toán mà không cần giao diện web, chạy lệnh:
 
 ```bash
 python recruitment_optimizer.py
