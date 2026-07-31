@@ -95,7 +95,7 @@ def load_and_preprocess_data():
     df = pd.read_csv(csv_path)
     
     # Load ML Model
-    model_path = 'data/best_salary_prediction_model.pkl'
+    model_path = 'best_salary_prediction_model.pkl'
     if not os.path.exists(model_path):
         st.error(f"Không tìm thấy mô hình ML dự báo lương {model_path}!")
         return df, None

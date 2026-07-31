@@ -240,7 +240,7 @@ def solve_recruitment_ilp(
 if __name__ == "__main__":
     # Check paths
     csv_path = os.path.join("data", "job_salary_prediction_dataset.csv")
-    model_path = os.path.join("data", "best_salary_prediction_model.pkl")
+    model_path = "best_salary_prediction_model.pkl"
     
     if not os.path.exists(csv_path) or not os.path.exists(model_path):
         print(f"Error: Missing dataset ({csv_path}) or model ({model_path})!")
