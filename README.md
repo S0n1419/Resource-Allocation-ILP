@@ -1,6 +1,5 @@
-# Hướng Dẫn Kỹ Thuật: Hệ Thống Hỗ Trợ Ra Quyết Định Phân Bổ Nguồn Lực Tuyển Dụng (DSS - Recruitment ILP)
+# Hệ Thống Hỗ Trợ Ra Quyết Định Phân Bổ Nguồn Lực Tuyển Dụng (DSS - Recruitment ILP)
 
-Tài liệu này giải thích chi tiết cấu trúc mô hình kết hợp Machine Learning và Quy hoạch tuyến tính nguyên (Integer Linear Programming - ILP) để tối ưu cơ cấu nhân sự.
 
 ---
 
